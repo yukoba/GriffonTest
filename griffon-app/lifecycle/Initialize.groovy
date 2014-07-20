@@ -13,6 +13,5 @@
  */
 
 import groovy.swing.SwingBuilder
-import static griffon.util.GriffonApplicationUtils.isMacOSX
 
-SwingBuilder.lookAndFeel((isMacOSX ? 'system' : 'nimbus'), 'gtk', ['metal', [boldFonts: false]])
+SwingBuilder.lookAndFeel("system")
