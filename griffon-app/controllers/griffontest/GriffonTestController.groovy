@@ -5,11 +5,12 @@ import java.awt.event.ActionEvent
 class GriffonTestController {
     // these will be injected by Griffon
     GriffonTestModel model
-    GriffonTestView view
+    def view
 
     void mvcGroupInit(Map args) {
         // this method is called after model and view are injected
         model.count = "0"
+        updateCountLabel()
     }
 
     // void mvcGroupDestroy() {
@@ -23,5 +24,12 @@ class GriffonTestController {
     */
     def onInc = { ActionEvent evt = null ->
         model.count = ((model.count as int) + 1) as String
+        updateCountLabel()
+    }
+
+    void updateCountLabel() {
+        edt {
+            view.countLabel.text = model.count
+        }
     }
 }

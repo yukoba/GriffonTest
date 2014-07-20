@@ -12,5 +12,8 @@ application(title: 'GriffonTest',
     label(text: "回数：", constraints: "left")
     textField(text: bind('count', target: model, mutual: true), columns: 20, editable: true, constraints: "wrap")
 
+    label(text: "回数 from Controller：", constraints: "left")
+    label(text: "", id: "countLabel", constraints: "wrap")
+
     button('increment', actionPerformed: controller.onInc, constraints: "span 2, right")
 }
