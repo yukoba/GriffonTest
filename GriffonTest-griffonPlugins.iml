@@ -2,6 +2,7 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
+    <content url="file://$USER_HOME$/.griffon/1.5.0/projects/GriffonTest/plugins/miglayout-1.0.0" />
     <content url="file://$USER_HOME$/.griffon/1.5.0/projects/GriffonTest/plugins/swing-1.4.0" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
