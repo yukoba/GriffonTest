@@ -15,5 +15,9 @@ application(title: 'GriffonTest',
     label(text: "回数 from Controller：", constraints: "left")
     label(text: "", id: "countLabel", constraints: "wrap")
 
+    scrollPane(constraints: "span 2, growx, height 240, wrap") {
+        tree(id: "numberTree", constraints: "grow")
+    }
+
     button('increment', actionPerformed: controller.onInc, constraints: "span 2, right")
 }

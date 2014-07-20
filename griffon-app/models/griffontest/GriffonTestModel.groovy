@@ -1,5 +1,6 @@
 package griffontest
 
 class GriffonTestModel {
-    @Bindable String count
+    @Bindable
+    String count
 }
