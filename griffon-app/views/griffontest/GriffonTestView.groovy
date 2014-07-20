@@ -10,7 +10,7 @@ application(title: 'GriffonTest',
     migLayout(layoutConstraints: "fill")
 
     label(text: "回数：", constraints: "left")
-    textField(columns: 20, text: bind { model.count }, constraints: "wrap", editable: false)
+    textField(text: bind('count', target: model, mutual: true), columns: 20, editable: true, constraints: "wrap")
 
     button('increment', actionPerformed: controller.onInc, constraints: "span 2, right")
 }
