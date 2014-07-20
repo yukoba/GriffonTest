@@ -3,6 +3,7 @@ GriffonTest
 Griffon の練習アプリ
 
 同じ物を IntelliJ IDEA の GUI Designer を使用して実装したのが、 https://github.com/yukoba/SwingTest
+
 Griffon使うより、GUI Designer を使用した方が
 
 - デザインの設計にGUIを使える
