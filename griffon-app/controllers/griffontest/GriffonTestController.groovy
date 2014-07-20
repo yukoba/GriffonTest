@@ -1,5 +1,7 @@
 package griffontest
 
+import java.awt.event.ActionEvent
+
 class GriffonTestController {
     // these will be injected by Griffon
     def model
@@ -18,7 +20,7 @@ class GriffonTestController {
         by default. You can change this setting of course.
         Please read chapter 9 of the Griffon Guide to know more.
     */
-    def onInc = { evt = null ->
+    def onInc = { ActionEvent evt = null ->
         model.count = ((model.count as int) + 1) as String
     }
 }
